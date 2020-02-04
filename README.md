@@ -19,3 +19,4 @@ This repository is another version of the repository **Segmentation based Semant
 > python -W ignore demo_end_to_end.py
 
 5. Find the foreground images in the Data/foreground/ directory. 
+
