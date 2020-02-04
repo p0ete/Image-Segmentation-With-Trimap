@@ -20,3 +20,6 @@ This repository is another version of the repository **Segmentation based Semant
 
 5. Find the foreground images in the Data/foreground/ directory. 
 
+### Results
+<img src="https://github.com/p0ete/Image-Segmentation-With-Trimap/blob/master/results/sac.png" alt="alt text" width="960" height="480">
+<img src="https://github.com/p0ete/Image-Segmentation-With-Trimap/blob/master/results/velo.png" alt="alt text" width="960" height="480">
