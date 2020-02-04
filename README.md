@@ -1,26 +1,17 @@
-# Segmantation_based_Semantic_Matting [WIP]
+# Image Segmentation With Trimap
 
-This repository is unofficial implementation of paper **Instance Segmentation based Semantic Matting for Compositing Applications**(https://arxiv.org/abs/1904.05457)
-
-Final Results of segmenatation are great, but not as good as the results proposed in the paper.
-
-![Results](https://github.com/Griffin98/Automatic-Background-Removal/raw/master/Results.png)
-
-### ToDo:
-- OOPs Class Design
-- Improve Trimap Generation
-  * Trimap Generation Stage(Feedback Loop) seems to have major impact on the final output. My current implementation is sort of lazy implemenatation by just iterating kernel size in decreasing order. Need to work on it, in order to achieve accuracy as proposed in paper.
-- Multiple Object Segmentation
-  * Currently i have limited the code to segment only few instances from the COCO dataset.
-
+This repository is another version of the repository **Segmentation based Semantic Matting**
+ (https://github.com/Griffin98/Segmentation_based_Semantic_Matting) based on the paper  **Instance Segmentation based Semantic Matting for Compositing Applications** (https://arxiv.org/abs/1904.05457).
 
 ### Run
-1. Download Pre-trained Mask R-CNN Model from [Link](https://github.com/matterport/Mask_RCNN/releases)
-2. Download Pre-trained Deep Image Matting model from [Link](https://github.com/foamliu/Deep-Image-Matting-v2/releases)
-3. Place both the downloaded models in __models/__ directory
+1. Run the setup file in order to download the two models:
 
-To Run:
-> python demo_end_to_end.py <input_image>
+> ./setup.sh
 
-Output:
-> Data/foreground/ and Data/alpha
+2. Place your input images in the Data/input/ directory.
+
+3. Run:
+
+> python -W ignore demo_end_to_end.py
+
+4. Find the foreground image in the Data/foreground/ directory. 
