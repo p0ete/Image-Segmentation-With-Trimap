@@ -57,7 +57,7 @@ torch==1.4.0+cpu
 torchsummary==1.5.1
 torchvision==0.5.0+cpu
 traitlets==4.3.3
-urllib3==1.25.8
+urllib3==1.26.5
 wcwidth==0.1.8
 Werkzeug==0.16.1
 wrapt==1.11.2
